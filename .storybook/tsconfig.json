@@ -4,7 +4,8 @@
     "types": [
       "node"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "../src/test.ts",

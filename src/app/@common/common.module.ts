@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CardComponent } from './components/card/card.component';
+import { DonutComponent } from './components/donut/donut.component';
+import {NgxEchartsModule} from "ngx-echarts";
+import * as echarts from 'echarts';
 
 
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    DonutComponent
   ],
   imports: [
+    NgxEchartsModule.forRoot({echarts})
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    DonutComponent
   ]
 })
 export class CommonModule { }

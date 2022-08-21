@@ -4,12 +4,143 @@
     "injectables": [],
     "guards": [],
     "interceptors": [],
-    "classes": [],
+    "classes": [
+        {
+            "name": "DonutDataModel",
+            "id": "class-DonutDataModel-cea59c9c3c98f820b0a6e5081bd5ff3101fb61ecfed94b49e803cf49062bf8c9e10b8ca6d00d79589fd203942a9063078fd0e6d2422a3bae674925269eaaa850",
+            "file": "src/app/@common/models/donutModel.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export class DonutModel {\r\n\r\n  constructor(init?: Partial<DonutModel>) {\r\n    Object.assign(this, init)\r\n  }\r\n\r\n  title: string = '';\r\n  values: DonutDataModel[] = [];\r\n}\r\n\r\nexport class DonutDataModel {\r\n  constructor(init?: Partial<DonutDataModel>) {\r\n    Object.assign(this, init)\r\n  }\r\n\r\n  name: string = '';\r\n  value: number = 0\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "init",
+                        "type": "Partial<DonutDataModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "optional": true
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "init",
+                        "type": "Partial<DonutDataModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "optional": true,
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "name",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        },
+        {
+            "name": "DonutModel",
+            "id": "class-DonutModel-cea59c9c3c98f820b0a6e5081bd5ff3101fb61ecfed94b49e803cf49062bf8c9e10b8ca6d00d79589fd203942a9063078fd0e6d2422a3bae674925269eaaa850",
+            "file": "src/app/@common/models/donutModel.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export class DonutModel {\r\n\r\n  constructor(init?: Partial<DonutModel>) {\r\n    Object.assign(this, init)\r\n  }\r\n\r\n  title: string = '';\r\n  values: DonutDataModel[] = [];\r\n}\r\n\r\nexport class DonutDataModel {\r\n  constructor(init?: Partial<DonutDataModel>) {\r\n    Object.assign(this, init)\r\n  }\r\n\r\n  name: string = '';\r\n  value: number = 0\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "init",
+                        "type": "Partial<DonutModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "optional": true
+                    }
+                ],
+                "line": 1,
+                "jsdoctags": [
+                    {
+                        "name": "init",
+                        "type": "Partial<DonutModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "optional": true,
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "title",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "values",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DonutDataModel[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
     "directives": [],
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-8ccecb9aae276dbb634634781dff4884bb0f3ebf17ba6c43b3f8db9b2a1f22e7e31e53b00751c5d28af72b7a964f8fccb3efee12e186b57ae6088e9419f2316f",
+            "id": "component-AppComponent-6e2ae1fc79433b7876e2c099489387dde8c5c9c275b55add0fdd5f5646d9bc21564ed03a76aeca47c6615d32685052df5ed8af002a8b74718f7948ac94591352",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -29,6 +160,16 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "donutData",
+                    "defaultValue": "new DonutModel({\r\n    title: 'Donut Default Title',\r\n    values: [\r\n      new DonutDataModel({name: 'Key 1', value: 5}),\r\n      new DonutDataModel({name: 'Key 2', value: 10}),\r\n    ]\r\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
                     "name": "title",
                     "defaultValue": "'angular-sandbox'",
                     "deprecated": false,
@@ -36,7 +177,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 9
+                    "line": 10
                 }
             ],
             "methodsClass": [],
@@ -47,7 +188,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'angular-sandbox';\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport {DonutDataModel, DonutModel} from \"./@common/models/donutModel\";\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'angular-sandbox';\r\n\r\n  donutData = new DonutModel({\r\n    title: 'Donut Default Title',\r\n    values: [\r\n      new DonutDataModel({name: 'Key 1', value: 5}),\r\n      new DonutDataModel({name: 'Key 2', value: 10}),\r\n    ]\r\n  })\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -56,7 +197,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-card [CardTitle]=\"'This is a title'\">\r\n    <p>this is a test</p>\r\n</app-card>\r\n"
+            "templateData": "<app-card [CardTitle]=\"'This is a title'\">\r\n    <app-donut [DonutData]=\"donutData\"></app-donut>\r\n</app-card>\r\n"
         },
         {
             "name": "CardComponent",
@@ -129,18 +270,143 @@
                 "OnInit"
             ],
             "templateData": "<div class=\"card\">\n  <h3>{{CardTitle}}</h3>\n  <div class=\"content\">\n    <ng-content></ng-content>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "DonutComponent",
+            "id": "component-DonutComponent-f327505abefa798df717305982712e92832755ed611cf011bb97d8ac50849322033e5e3febb7673e5a9534cb9247bc13d158341f47101925bfdac0f95d1fede3",
+            "file": "src/app/@common/components/donut/donut.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-donut",
+            "styleUrls": [
+                "./donut.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./donut.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "DonutData",
+                    "defaultValue": "new DonutModel()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "DonutModel",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "options",
+                    "defaultValue": "{}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EChartsOption",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "setOptions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';\nimport {DonutModel} from \"../../models/donutModel\";\nimport {EChartsOption} from \"echarts\";\n\n@Component({\n  selector: 'app-donut',\n  templateUrl: './donut.component.html',\n  styleUrls: ['./donut.component.scss']\n})\nexport class DonutComponent implements OnInit, OnChanges {\n\n  @Input() DonutData: DonutModel = new DonutModel()\n\n  options: EChartsOption = {}\n\n  constructor() {\n  }\n\n  ngOnInit(): void {\n    this.setOptions();\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    // if (changes['DonutData']?.currentValue !== changes['DonutData']?.previousValue){\n    //   this.setOptions();\n    // }\n  }\n\n  private setOptions() {\n    this.options.title = {\n      text: this.DonutData.title\n    }\n\n    this.options.series = [\n      {\n        type: 'pie',\n        data: this.DonutData.values.map(_ => {\n          return {\n            name: _.name,\n            value: _.value\n          }\n        }),\n      }\n    ];\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".chart-container {\r\n  width: 500px;\r\n  height: 500px\r\n}\r\n",
+                    "styleUrl": "./donut.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 14
+            },
+            "implements": [
+                "OnInit",
+                "OnChanges"
+            ],
+            "templateData": "<canvas echarts [options]=\"options\" [merge]=\"options\" [autoResize]=\"true\" class=\"chart-container\"></canvas>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-bc529f41853e94c81e52d3f738a5689c3391517b865cab2b20848cf5f869dcb7f9e6d4be1cd650da29e7586ea8907e6ca7f87812600724d4c027bc3ac9d07ee0",
+            "id": "module-AppModule-d1e911feb4363894ffb5366079041c2c8245abe4371c71123c3a9b38cef22054e3f98f7a455ae60c8e96e68d4bc0750993856a591aebb44d0054a3d1d0242625",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport {CommonModule} from \"./@common/common.module\";\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    CommonModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n  exports: [\r\n    CommonModule\r\n  ]\r\n})\r\nexport class AppModule { }\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport {CommonModule} from \"./@common/common.module\";\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    CommonModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n  exports: [\r\n    CommonModule\r\n  ]\r\n})\r\nexport class AppModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -186,13 +452,13 @@
         },
         {
             "name": "CommonModule",
-            "id": "module-CommonModule-14686a802d40843a40f33cd92ae5aef33a56fc40768c36e84cc96702528a00e5dae2cec92dc7fc7fd28ee87ce512f9e46a4166b15d63498a75b39c9790ce2a0e",
+            "id": "module-CommonModule-a8b5afc54e6e50c7600ffa7d625c1445e0758819cff3202db6bb0c9506b074c004d4a69b0df7b2d24f49df2f3874d21d8af6c8af06a31d9f27165e70c51fa1b9",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/@common/common.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './components/card/card.component';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    CardComponent\n  ]\n})\nexport class CommonModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './components/card/card.component';\nimport { DonutComponent } from './components/donut/donut.component';\nimport {NgxEchartsModule} from \"ngx-echarts\";\nimport * as echarts from 'echarts';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent,\n    DonutComponent\n  ],\n  imports: [\n    NgxEchartsModule.forRoot({echarts})\n  ],\n  exports: [\n    CardComponent,\n    DonutComponent\n  ]\n})\nexport class CommonModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -203,6 +469,9 @@
                     "elements": [
                         {
                             "name": "CardComponent"
+                        },
+                        {
+                            "name": "DonutComponent"
                         }
                     ]
                 },
@@ -215,6 +484,9 @@
                     "elements": [
                         {
                             "name": "CardComponent"
+                        },
+                        {
+                            "name": "DonutComponent"
                         }
                     ]
                 },
@@ -242,6 +514,16 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
+                "name": "DefaultDonut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/@common/components/donut/donut.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args\r\n})"
+            },
+            {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -262,16 +544,6 @@
                 "defaultValue": "{\r\n  production: false\r\n}"
             },
             {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/@common/components/card/card.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "() => ({\r\n  props: {\r\n    CardTitle: 'Testing'\r\n  }\r\n})"
-            },
-            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -279,11 +551,67 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "SomeContent",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/@common/components/card/card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n  template: `\r\n    <app-card [CardTitle]=\"CardTitle\">\r\n        <ul>\r\n        <li>Foo</li>\r\n        <li>Bar</li>\r\n        <li>Baz</li>\r\n        </ul>\r\n    </app-card>\r\n  `\r\n})"
+            },
+            {
+                "name": "TitleOnly",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/@common/components/card/card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args\r\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
-        "enumerations": [],
+        "enumerations": [
+            {
+                "name": "AlignmentEnum",
+                "childs": [
+                    {
+                        "name": "Auto",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "auto"
+                    },
+                    {
+                        "name": "Left",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "left"
+                    },
+                    {
+                        "name": "Right",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "right"
+                    },
+                    {
+                        "name": "Center",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "center"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "src/app/@common/enum/alignment.enum.ts"
+            }
+        ],
         "groupedVariables": {
             "src/test.ts": [
                 {
@@ -304,6 +632,18 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
+                }
+            ],
+            "src/app/@common/components/donut/donut.component.stories.ts": [
+                {
+                    "name": "DefaultDonut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/@common/components/donut/donut.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -332,19 +672,67 @@
             ],
             "src/app/@common/components/card/card.component.stories.ts": [
                 {
-                    "name": "Primary",
+                    "name": "SomeContent",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/@common/components/card/card.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "() => ({\r\n  props: {\r\n    CardTitle: 'Testing'\r\n  }\r\n})"
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n  template: `\r\n    <app-card [CardTitle]=\"CardTitle\">\r\n        <ul>\r\n        <li>Foo</li>\r\n        <li>Bar</li>\r\n        <li>Baz</li>\r\n        </ul>\r\n    </app-card>\r\n  `\r\n})"
+                },
+                {
+                    "name": "TitleOnly",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/@common/components/card/card.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args\r\n})"
                 }
             ]
         },
         "groupedFunctions": {},
-        "groupedEnumerations": {},
+        "groupedEnumerations": {
+            "src/app/@common/enum/alignment.enum.ts": [
+                {
+                    "name": "AlignmentEnum",
+                    "childs": [
+                        {
+                            "name": "Auto",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "auto"
+                        },
+                        {
+                            "name": "Left",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "left"
+                        },
+                        {
+                            "name": "Right",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "right"
+                        },
+                        {
+                            "name": "Center",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "center"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "src/app/@common/enum/alignment.enum.ts"
+                }
+            ]
+        },
         "groupedTypeAliases": {}
     },
     "routes": [],
@@ -357,7 +745,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "SomeContent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/@common/components/card/card.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TitleOnly",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -372,12 +770,49 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/@common/components/donut/donut.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultDonut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/@common/components/donut/donut.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DonutComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/@common/models/donutModel.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "DonutDataModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/@common/models/donutModel.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "DonutModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/app.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

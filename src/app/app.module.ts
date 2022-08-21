@@ -10,7 +10,7 @@ import {CommonModule} from "./@common/common.module";
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

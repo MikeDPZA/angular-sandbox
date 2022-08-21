@@ -23,6 +23,8 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@types/echarts": "^4.9.16",
+    "echarts": "^5.3.3",
     "ngx-echarts": "^14.0.0",
     "rxjs": "~7.5.0",
     "scss-scaffold": "^0.0.5",
